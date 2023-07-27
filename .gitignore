@@ -9,7 +9,9 @@ pids
 *.seed
 
 # Dependency directory
-node_modules
+node_modules/*
+!node_modules/@kurkle/
+!node_modules/chart.js
 
 .parcel-cache
 
