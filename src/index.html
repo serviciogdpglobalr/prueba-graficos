@@ -9,7 +9,15 @@
 <body>
     <div style="width: 800px;"><canvas id="actividadesMes"></canvas></div>
     <div style="width: 800px;"><canvas id="reportesTipo"></canvas></div>
-    <script type="module" src="./scripts/actividadesMes.js"></script>
-    <script type="module" src="./scripts/reportesMes.js"></script>
+    <script type="importmap">
+        {
+          "imports": {
+            "@kurkle/color": "/node_modules/@kurkle/color/dist/color.esm.js",
+            "chart.js/auto": "/node_modules/chart.js/auto/auto.js"
+          }
+        }
+      </script>
+    <script type="module" src="./scripts/actividadesMes.mjs"></script>
+    <script type="module" src="./scripts/reportesMes.mjs"></script>
 </body>
 </html>
